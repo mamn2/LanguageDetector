@@ -1,0 +1,13 @@
+# Outline the system structure (including necessary files and directories for running the code)
+
+## Input
+
+We use the src/Code/fileReader.py file to read the input data and parse it to a string. This string gets fed into the trainer.
+
+## Trainer
+
+The trainers are located in each of the models in src/Code. They are typically in the first Jupyter input, and you must run them before attempting to run the classifier. They will train the model based on the input data from above.
+
+## Classifier
+
+Classifiers use the probabilities calculated by the trainer to determine which language the text belongs to. The classifiers are implemented in the naiveBayesClassifier() functions in each model in src/Code.
